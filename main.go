@@ -100,7 +100,7 @@ func main06() {
 	fmt.Println(d)
 }
 
-func main() {
+func main07() {
 	// x := "hello!"
 	// for i := 0; i < len(x); i++ {
 	// 	x := x[i]
@@ -118,4 +118,25 @@ func main() {
 	f := 1e100
 	// i := int(f)
 	fmt.Printf("%g\n", f)
+}
+
+//3.5 字符串
+func main08() {
+	s := "hello, world"
+	fmt.Println(len(s))
+
+	fmt.Println(s[0], s[7])
+	fmt.Println(s[0:12])
+
+	fmt.Println(s[:5])
+	fmt.Println(s[7:])
+	fmt.Printf("测试\a\n")
+}
+
+func main() {
+	var a = "abc"
+	var b = []byte(a)
+	fmt.Println(b)
+	s3 := string(b)
+	fmt.Println(s3)
 }
