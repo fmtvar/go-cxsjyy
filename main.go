@@ -141,9 +141,39 @@ func main09() {
 }
 
 //3.5.4
-func main() {
+func main10() {
 	x, _ := strconv.Atoi("123")
 	fmt.Println(x)
 	y, _ := strconv.ParseInt("123", 10, 32)
 	fmt.Println(y)
+}
+
+func main() {
+	var a [3]int
+	fmt.Println(a[0])
+	fmt.Println(a[len(a)-1])
+
+	for i, v := range a {
+		fmt.Printf("%d- %d\n", i, v)
+	}
+
+	for _, v := range a {
+		fmt.Printf("value:%d\n", v)
+	}
+
+	var q [3]int = [3]int{1, 2, 3}
+	fmt.Println(q)
+	var r [3]int = [3]int{1, 2}
+
+	fmt.Println(r[1])
+
+	fmt.Println("--------------------")
+
+	y := [...]int{1, 2, 3, 4, 5, 6, 6, 7, 8, 8, 9, 9}
+	fmt.Printf("%T\n", y)
+
+	for i, v := range y {
+		fmt.Printf("%d-%d\n", i, v)
+	}
+
 }
