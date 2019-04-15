@@ -1,8 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+import "strconv"
 
 func f01(p *int) int {
 	*p++
@@ -133,10 +132,18 @@ func main08() {
 	fmt.Printf("测试\a\n")
 }
 
-func main() {
+func main09() {
 	var a = "abc"
 	var b = []byte(a)
 	fmt.Println(b)
 	s3 := string(b)
 	fmt.Println(s3)
+}
+
+//3.5.4
+func main() {
+	x, _ := strconv.Atoi("123")
+	fmt.Println(x)
+	y, _ := strconv.ParseInt("123", 10, 32)
+	fmt.Println(y)
 }
