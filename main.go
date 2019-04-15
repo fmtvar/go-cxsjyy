@@ -176,4 +176,9 @@ func main() {
 		fmt.Printf("%d-%d\n", i, v)
 	}
 
+	rr := [...]int{99: -1}
+	for i, v := range rr {
+		fmt.Printf("%d-%d\n", i, v)
+	}
+
 }
